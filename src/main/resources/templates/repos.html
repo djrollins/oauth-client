@@ -1,0 +1,12 @@
+<!DOCTYPE html>
+<html xmlns:th="http://www.thymeleaf.org" lang="uk">
+<head>
+    <title>Getting Started: Serving Web Content</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8"/>
+</head>
+<body>
+<ul data-th-block data-th-each="repo: ${repos}">
+    <li><a data-th-href="${repo.htmlUrl}" data-th-text="${repo.name}"></a></li>
+</ul>
+</body>
+</html>
